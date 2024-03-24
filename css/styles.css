@@ -769,10 +769,9 @@ text-decoration-skip-ink: none;
 color: #4d5ae5;
  }
 
- .modal-span {
-  display: inline-flex;
- }
+ 
  .check-text span {
+  display: inline-flex;
   width: 16px;
   height: 16px;
   border-radius: 2px;
