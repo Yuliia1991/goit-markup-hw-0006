@@ -37,7 +37,7 @@
  </header>
  
  <!-- Modal-->
- <div class="backdrop is-open">
+ <div class="backdrop">
     <div class="modal">
         <button type="button" class="modal-close-btn">
             <svg class="modal-close-icon" width="8" height="8">
@@ -92,20 +92,26 @@
              placeholder="Text input" 
              class="modal-text"></textarea>
             </div>
+
+            <div class="modal-field">
+                <input type="checkbox"
+                 name="privaci" 
+                 required 
+                 id="privaci" 
+                 class="modal-check visually-hidden"/>
+                 <label for="privaci"
+                  class="check-text">
+                  <span>
+                    <svg class="modal-check-icon" width="10" height="8">
+                        <use href="./images/icons.svg#icon-Vector-3"></use>
+                    </svg>
+                  </span>I accept the terms and conditions of the <a href="" class="check-link"> Privacy Policy</a></label>
+            </div>
            </div>
 
         </form>
-
-
-
-          
-    
-        <p class>I accept the terms and conditions of the <span class="policy">Privacy Policy</span></p>
-    
-            <input type="checkbox" name="accept">
-    
-    
-        <button type="button" class="modal-send-btn">Send</button>
+<button type="submit" 
+class="modal-send-btn">Send</button>
     
 
 </div>
@@ -502,6 +508,23 @@
             </ul>
 
         </div>
+        <div class="footer-form-check">
+            <p class="footer-text-email">Subscribe</p>
+        <form class="footer-form">
+            <label>
+                <input type="email"
+                name="footer-email"
+                placeholder="E-mail"
+                class="footer-email">
+            </label>
+            
+            <svg class="footer-modal-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+            </svg>
+            <button type="submit"class="footer-button">Subscribe</button>
+        </form>
+    
+    </div> 
     </div>
  </footer>
 
