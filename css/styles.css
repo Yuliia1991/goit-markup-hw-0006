@@ -751,7 +751,7 @@ margin-bottom: 4px;
 }
 
 .check-text {
-  display: inline-flex;
+display: flex;
 font-size: 12px;
 line-height: 117%;
 letter-spacing: 0.04em;
@@ -760,7 +760,6 @@ align-items: center;
 margin-top: 16px;
 }
 
- 
 
  .check-link {
 text-decoration: underline;
