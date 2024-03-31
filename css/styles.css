@@ -275,12 +275,18 @@ line-height: 1.5em;
 letter-spacing: 0.02em;
 margin-top: 8px;
 text-align: left;
+
 }
 /*====Section Team====*/
 .section-team {
   background:#F4F4FD;
-  padding-top: 120px; 
-  padding-bottom: 120px;
+  /*padding-top: 120px; 
+  padding-bottom: 120px;*/
+   padding-top: 96px;
+   padding-bottom: 96px;
+   padding-left: 28px;
+   padding-right: 28px;
+  
 }
 .section-team-title {
   color: #2E2F42;
@@ -295,9 +301,10 @@ text-transform: capitalize;
 
 .team-list {
   
-  display: flex;
-  gap: 24px;
+  /*display: flex;*/
+  /*gap: 24px;*/
   justify-content: center;
+  
   }
 
   .person {
@@ -306,7 +313,11 @@ text-transform: capitalize;
   }
   .team-list-item {
     background-color: #FFFFFF;
-    width: calc((100% - 3 * 24) / 4);
+    margin-bottom: 72px;
+    align-items: center;
+
+    /*width: calc((100% - 3 * 24) / 4);*/
+    width: 264px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   
@@ -832,7 +843,7 @@ background-color: #404bbf;
   .container {
     width: 736px;
   }
-
+/**********Features*********/
   .features-list-item {
     width: calc((100% - 48px)/2);
   }
@@ -843,6 +854,14 @@ background-color: #404bbf;
   .title-features {
   text-align: left;
   }
+/******Section Team*********/
+.section-team {
+
+}
+
+.team-list {
+  
+}
 }
 @media screen and (min-width:1200px) {
   .container {
