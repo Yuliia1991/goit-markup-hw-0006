@@ -27,9 +27,10 @@ h6 {
 }
  .container {
   /**width:1158px;**/
-  width: 320px;
-  padding: 0 16px;
-  margin:  0 auto;
+  max-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
  }
  img {
   display:block;
@@ -148,34 +149,46 @@ transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /*====Main====*/
   /*====Secnion-one====*/
   .section-one {
+    padding-bottom: 120px;
     background-color: #2E2F42;
     background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
-      url(../images/people-office1.jpg);
+      url(../images/office-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 1440px;
+    /*max-width: 1440px;
     height: 600px;
-    /*text-align: center;*/
-    padding: 188px 0;
-    margin-left: auto;
+    text-align: center;
+    /*padding: 188px 0;*/
+    /*margin-left: auto;
     margin-right: auto;
-    
+    text-align: center;*/
+    max-width: 320px;
+    margin: 0 auto;
+    height: 432px;
+    padding: 72px 0;
   }
 
 
   .section-one-teitle {
     color: #FFF;
 text-align: center;
-font-size: 56px;
+/*font-size: 56px;*/
+font-size: 36px;
 font-weight: 700;
-line-height: 1.07em;
+/*line-height: 1.07em;*/
+line-height: 1.1;
 letter-spacing: 0.02em;
-max-width: 496px;
-margin: 0 auto 48px auto;
+/*max-width: 496px;*/
+max-width: 216px;
+/*max-height: 160px;*/
+/*margin: 0 auto 48px auto;*/
 display: block;
+text-align: center;
+margin: 0 auto;
+margin-bottom: 72px;
   }
 /*Button*/
   .section-one-btn {
@@ -185,7 +198,9 @@ display: block;
     gap: 10px;  
     background: #4D5AE5;
     color: #FFF;
-    margin: 0 auto;
+    margin-top: 72px;
+    margin-right: 0 auto;
+    margin-left: 0 auto;
     min-width: 169px;
     height: 56px;
     border: none;
@@ -848,9 +863,7 @@ background-color: #404bbf;
 
 @media screen and (min-width:768px) {
   .container {
-    width: 736px;
-    padding-left: 16px;
-    padding-right: 16px;
+    max-width: 736px;
   
   }
 
@@ -915,16 +928,38 @@ transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .open-menu-btn {
   display: none;
 }
+
+/**********Section-one********/
+.section-one {
+  padding: 112px 0;
+  min-width: 768px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
+      url(../images/office-tablet.jpg);
+  
+}
+.section-one-teitle {
+  max-width: 496px;
+  line-height: 1.07em;
+  font-size: 56px;
+  margin-bottom: 36px;
+}
+.section-one-btn {
+  margin-bottom: 112px;
+}
+
 /**********Features*********/
   .features-list-item {
-    width: calc((100% - 24 * 2)/2);
-    padding-right: 0 auto;
+    width: calc((100% - 24)/2);
+  
   }
 
   .features-list {
     gap: 24px 72px;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    flex-direction: row;
   }
   .title-features {
   text-align: left;
@@ -944,9 +979,9 @@ padding-bottom: 96px;
   
 }
 .team-list-item {
-  width: calc((100% - 2 * 24) /2);
+  width: calc((100% - 24) /2);
   align-items: center;
-  margin-left: 0;
+  
 }
 }
 
@@ -954,7 +989,9 @@ padding-bottom: 96px;
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1440px;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 /*********Header*********/
 .logo {
@@ -969,10 +1006,28 @@ padding-bottom: 96px;
 font-size: 16px;
 line-height: 1.5;
 }
+/*********Section one******/
+.section-one {
+  min-width: 1440px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url(../images/people-office1.jpg);
+
+}
+.section-one-teitle {
+  margin-bottom: 48px;
+}
+.section-one-btn {
+  margin-bottom: 188px;
+}
+
 /***********Features**********/
   .section-features {
     padding-top: 120px;
     padding-bottom: 120px;
+    margin: 0 auto;
   }
 
   .features-list-item {
@@ -989,6 +1044,7 @@ line-height: 1.5;
     padding-bottom: 120px;
     padding-left: 0;
     padding-right: 0;
+    margin: 0 auto;
   }
   .team-list-item {
     width: calc((100% - 3 * 24) / 4);
