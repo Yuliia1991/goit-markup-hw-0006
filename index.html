@@ -355,15 +355,16 @@
             <li class="portfolio-list">
                 <div class="portfolio-cover-wrap">
                     <picture>
-                        <source srcset="./images/photos-potfolio/#banking-app-dek-2.jpg">
-                        <source>
-                        <source>
-                        <img src="" alt="">
-                    </picture>
+                        <source srcset="./images/banking-app.jpg 1x, ./images/photos-potfolio/banking-app-dek-2.jpg 2x" media="(min-width: 1158px)">
+                        <source srcset="./images/photos-potfolio/banking-app-tab-1.jpg 1x, ./images/photos-potfolio/banking-app-tab-2.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/photos-potfolio/banking-app-mob-1.jpg 1x, .images/photos-potfolio/banking-app-mob-2.jpg 2x" media="(min-width: 320px)">
+                       <!--- <img src="" alt=""/>-->
+                    
                 <img src="./images/banking-app.jpg"
                 width="360"
                 height="300"
                 alt="Banking app"/>
+            </picture>
                 <p class="cover-portfolio-text">
                         14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                     </p>
@@ -377,10 +378,19 @@
 
              <li class="portfolio-list">
                 <div class="portfolio-cover-wrap">
+                    <picture>
+                        <source srcset="./images/photos-potfolio/cash-dek-2.jpg 2x,
+                        ./images/cashless-payment.jpg 1x" media="(min-width: 1158px)"/>
+                        <source srcset="./images/photos-potfolio/cash-tab-2.jpg 2x,
+                        ./images/photos-potfolio/cash-tab-1.jpg 1x" media="(min-width: 768px)"/>
+                        <source srcset=".images/photos-potfolio/cash-mob-2.jpg 2x,
+                        ./images/photos-potfolio/cash-mob-1.jpg 1x" media="(min-width: 320px)"/>
+                        <img src="" alt="">
                 <img src="./images/cashless-payment.jpg"
                 width="360"
                 height="300"
                 alt="Cashless Payment"/>
+                </picture>
                 <p class="cover-portfolio-text">
                         14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                     </p>
@@ -530,7 +540,7 @@
 
 <!----------Modal------------>
 
- <!--<div class="backdrop is-open">
+ <div class="backdrop">
     <div class="modal">
         <button type="button" class="modal-close-btn">
             <svg class="modal-close-icon" width="8" height="8">
@@ -611,7 +621,7 @@ class="modal-send-btn">Send</button>
     
 </form>
 </div>
-</div>-->
+</div>
 
 
 </body>
